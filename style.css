@@ -28,7 +28,7 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 .center{text-align: center;}
 
 .header-bg {background:url(images/header-bg1.jpg) center fixed;background-size:cover !important }
-.header {background:rgba(0,0,0,0.8);position: fixed;top: 0;bottom: 0;left: 0;right: 0;}
+.header {background:rgba(0,0,0,0.8);position: relative;top: 0;bottom: 0;left: 0;right: 0;}
 .fullpage .container{display:table; height:inherit;}
 .fullpage .absolute-center{display:table-cell;vertical-align: middle;}
 
@@ -52,7 +52,7 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 
 .testimonials-bg{background:url(images/testimonial-bg.jpg) center fixed #000;background-size:cover;}
 .testimonials{background:rgba(0,0,0,0.9);color: #fff;position: relative;}
-.testimonials p{font-size: 26px;font-weight: 300;line-height: 35px;padding: 0 200px;}
+.testimonials p{font-size: 26px;font-weight: 300;line-height: 35px;padding: 5px 200px;}
 
 
 #carousel-testimonials .arrow{position: absolute;color: #fff;top: 12%;background:none;font-size:35px; }
