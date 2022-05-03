@@ -91,19 +91,31 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 	transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .accordion:hover {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
 	background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+}
+
+.accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
 	padding: 0 18px;
 	background-color: white;
-	display: none;
+	max-height: 0;
 	overflow: hidden;
-  }
-
+	transition: max-height 0.2s ease-out;
+}
 
 
 @media (max-width: 1200px){
@@ -114,7 +126,6 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 
 		.testimonials p{padding: 0 100px;}
 }
-
 
 @media (max-width: 768px){
 	h1 {font-size: 40px;line-height: 60px;}

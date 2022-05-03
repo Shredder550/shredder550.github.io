@@ -29,17 +29,17 @@
 
  // animation
 $(window).scroll(function() {
-    $('h2,h3').each(function(){
+  $('h2,h3').each(function(){
     var elementPos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-      if (elementPos < topOfWindow+600) {
-        $(this).addClass("animated slideInDown");
-      }
-    });
-
-
+    if (elementPos < topOfWindow+600) {
+      $(this).addClass("animated slideInDown");
+    }
   });
+
+
+});
 
 // accordion
 var acc = document.getElementsByClassName("accordion");
@@ -53,10 +53,10 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
