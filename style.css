@@ -32,7 +32,7 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 .fullpage .container{display:table; height:inherit;}
 .fullpage .absolute-center{display:table-cell;vertical-align: middle;}
 
-.halfpage {background-size:50% 100%;}
+.header-bg-half {background:url(images/header-bg1.jpg) center fixed;background-size:50% 100%; }
 
 .header h1.info {color:#fff;}
 .header h1.info a{color:#fff;text-decoration: none;}
