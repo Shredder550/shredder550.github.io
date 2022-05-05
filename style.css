@@ -34,6 +34,8 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 
 .header-bg-half {background:url(images/header-bg1.jpg) center fixed;background-size:cover; }
 .header-half {background:rgba(0,0,0,0.8);position: relative;}
+.halfpage .container{display:table; height:100px 50px;}
+.halfpage .absolute-center{display:table-cell;vertical-align: middle;}
 
 .header h1.info {color:#fff;}
 .header h1.info a{color:#fff;text-decoration: none;}
