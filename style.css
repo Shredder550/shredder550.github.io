@@ -104,11 +104,11 @@ h3{font-weight:300;font-size: 35px;line-height:38px;margin-bottom:40px;}
 	margin-left: 5px;
   }
   
-  .active:after {
+.accordion .active:after {
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
-.active, .accordion:hover {
+.accordion .active, .accordion:hover {
 	background-color: #ccc; 
 }
 
